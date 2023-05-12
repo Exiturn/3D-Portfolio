@@ -8,6 +8,8 @@ const Computers = ({ isMobile }) => {
   const computer = useGLTF('./desktop_pc/scene.gltf')
 
   return (
+    // Create a mesh using the imported gltf model, mesh includes the light and
+    // the primitive object
     <mesh>
       <hemisphereLight intensity={0.15} groundColor="black" />
       <pointLight intensity={0.5} />
@@ -54,12 +56,14 @@ const ComputersCanvas = () => {
   }, [])
 
   return (
+    // Create a canvas for the mesh to be rendered on
     <Canvas
       frameloop='demand'
       shadows
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
+      {/* Suspense component to load the mesh, fallback is the loader component */}
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}

@@ -25,8 +25,10 @@ const Hero = () => {
         </div>
       </div>
 
+      {/* 3D Canvas */}
       <ComputersCanvas />
 
+      {/* Framer Motion Animated Button */}
       <div className='absolute xs:bottom-[-4rem] bottom-32 w-full flex justify-center items-center'>
         <a href="#about">
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center

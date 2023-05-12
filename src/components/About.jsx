@@ -8,6 +8,7 @@ import { fadeIn, textVariant } from '../utils/motion';
 
 const ServiceCard = ({ index, title, icon: Icon}) => {
   return (
+    // ServiceCard component using the Tilt library
     <Tilt className="xs:w-[250px] w-full">
       <motion.div
       variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
@@ -33,6 +34,7 @@ const ServiceCard = ({ index, title, icon: Icon}) => {
 
 const About = () => {
   return (
+    // About component
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
@@ -48,7 +50,8 @@ const About = () => {
         from university with a 2:1 in BSc Computer Science and Games Development from the University of Huddersfield.
         Currently I am teaching myself Three.js and Next.js!
       </motion.p>
-
+      
+      {/* Services mapping, passes in index, and the service object through the spread operator */}
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
