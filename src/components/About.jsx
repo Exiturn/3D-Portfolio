@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { services } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
+import { SectionWrapper } from '../hoc';
 
 const ServiceCard = ({ index, title, icon: Icon}) => {
   return (
@@ -45,8 +46,8 @@ const About = () => {
         variants={fadeIn("","", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        Welcome to my portfolio. I am a front-end developer who is self-taught in Javascript and React.js,
-        experience in the industry as a web-developer along with a background in computer science. I graduated
+        Welcome to my portfolio. I am a front-end developer who is self-teaching in Javascript and React.js,
+        with experience in the industry as a web-developer and a strong background in computer science. I graduated
         from university with a 2:1 in BSc Computer Science and Games Development from the University of Huddersfield.
         Currently I am teaching myself Three.js and Next.js!
       </motion.p>
@@ -62,4 +63,4 @@ const About = () => {
   )
 }
 
-export default About
+export default SectionWrapper(About, "about")
