@@ -20,11 +20,15 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import next from "./tech/next.png"
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import axia from "./company/axia.png";
+import loreto from "./company/loreto.png";
+import uoh from "./company/uoh.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -52,10 +56,14 @@ export {
   tailwind,
   typescript,
   threejs,
+  next,
   meta,
   shopify,
   starbucks,
   tesla,
+  axia,
+  loreto,
+  uoh,
   carrent,
   jobit,
   tripguide,

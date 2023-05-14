@@ -11,8 +11,10 @@ const SectionWrapper = (Component, idName) =>
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, amount: 0.25 }}
-                className={`${styles.padding} max-w-7xl mx-auto relative z-0 mt-10 xs:mt-16`}>
+                className={`${styles.padding} max-w-7xl mx-auto relative z-0 mt-10 xs:mt-14`}>
                 
+                {/* The non-breaking space character is a placeholder for the 
+                actual component that this is wrapping */}
                 <span className='hash-span' id={idName}>
                     &nbsp;
                 </span>
