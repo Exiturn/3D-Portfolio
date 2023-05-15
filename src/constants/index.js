@@ -26,7 +26,10 @@ import {
     carrent,
     jobit,
     tripguide,
+    gpt3,
+    hoobank,
     threejs,
+    mrsphere,
   } from "../assets";
   
   export const navLinks = [
@@ -35,8 +38,8 @@ import {
       title: "About",
     },
     {
-      id: "work",
-      title: "Work",
+      id: "works",
+      title: "Works",
     },
     {
       id: "contact",
@@ -46,11 +49,11 @@ import {
   
   const services = [
     {
-      title: "Front-end Web Developer",
+      title: "Frontend web developer",
       icon: web,
     },
     {
-      title: "University Graduate",
+      title: "University graduate",
       icon: mobile,
     },
     {
@@ -58,7 +61,7 @@ import {
       icon: backend,
     },
     {
-      title: "Future Full-stack developer",
+      title: "Learning Fullstack development",
       icon: creator,
     },
   ];
@@ -188,58 +191,16 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "GPT-3 Landing Page",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "A fully responsive, Modern UI/UX website using React.js, styled with TailwindCSS and VanillaCSS (for styling not currently supported by tailwind). BEM methodology is applied throughout this project. Figma design and assets provided by Javascript Mastery on Youtube.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
-        },
-        {
-          name: "mongodb",
-          color: "green-text-gradient",
         },
         {
           name: "tailwind",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: carrent,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Job IT",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
           color: "green-text-gradient",
         },
         {
@@ -247,7 +208,49 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
+      image: gpt3,
+      source_code_link: "https://github.com/",
+    },
+    {
+      name: "Hoobank Landing Page",
+      description:
+        "This is a website application that is based on one of the challenge projects from JavaScript Mastery on Youtube. Built with React.js, Vite and styled with TailwindCSS. A figma design was provided along with the assets and colour scheme.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "green-text-gradient",
+        },
+        {
+          name: "vite",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: hoobank,
+      source_code_link: "https://github.com/",
+    },
+    {
+      name: "Trip Guide",
+      description:
+        "just a rotating little sphere, created using Three.js, acts as an entry project to learn the ropes of three.js",
+      tags: [
+        {
+          name: "three.js",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "javascript",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: mrsphere,
       source_code_link: "https://github.com/",
     },
   ];

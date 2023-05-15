@@ -33,6 +33,9 @@ import uoh from "./company/uoh.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import gpt3 from "./gpt3.png";
+import hoobank from "./hoobank.png";
+import mrsphere from "./mrsphere.png"
 
 export {
   logowhite,
@@ -67,4 +70,7 @@ export {
   carrent,
   jobit,
   tripguide,
+  gpt3,
+  hoobank,
+  mrsphere,
 };
