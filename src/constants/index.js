@@ -209,7 +209,8 @@ import {
         },
       ],
       image: gpt3,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/Exiturn/app1-jsm-tailwind",
+      live_site_link: "https://app1-jsm-tailwind.vercel.app/",
     },
     {
       name: "Hoobank Landing Page",
@@ -230,12 +231,13 @@ import {
         },
       ],
       image: hoobank,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/Exiturn/modern_bank_app_jsm",
+      live_site_link: "https://modern-bank-app-jsm.vercel.app/",
     },
     {
-      name: "Trip Guide",
+      name: "Mr Sphere",
       description:
-        "just a rotating little sphere, created using Three.js, acts as an entry project to learn the ropes of three.js",
+        "Just a rotating little sphere, created using Three.js, acts as an entry project to learn the ropes of three.js",
       tags: [
         {
           name: "three.js",
@@ -251,7 +253,8 @@ import {
         },
       ],
       image: mrsphere,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/Exiturn/mrsphere",
+      live_site_link: "https://mrsphere.vercel.app/",
     },
   ];
   
