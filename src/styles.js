@@ -15,6 +15,12 @@ const styles = {
     
     worksIcons:
       "w-9 h-9 rounded-full flex justify-center items-center cursor-pointer",
+
+    formButton:
+      "bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl hover:text-tertiary hover:bg-white ease-in duration-200",
+
+    formInput:
+      "bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium",
   };
   
   export { styles };
