@@ -4,6 +4,7 @@ import { technologies } from "../constants";
 
 const Tech = () => {
   return (
+    // Map through the technologies object to render their own ballcanvas
     <div className="flex flex-row flex-wrap justify-center gap-10">
       {technologies.map((technology) => (
         <div className="w-28 h-28" key={technology.name}>

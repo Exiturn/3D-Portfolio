@@ -9,7 +9,7 @@ import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
 const ExperienceCard = ({ experience }) => (
-  // Vertical timeline component 
+  // Vertical timeline component
   <VerticalTimelineElement
     contentStyle={{ background: '#1d1836', color: '#fff' }}
     contentArrowStyle={{ borderRight: '7px solid  #232631' }}
@@ -51,6 +51,8 @@ const Experience = () => {
         <h2 className={styles.sectionHeadText}>My journey so far!</h2>
       </motion.div>
 
+      {/* Map through the experiences object and pass in the experience and index
+      as props for the timeline element */}
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
           {experiences.map((experience, index) => (
