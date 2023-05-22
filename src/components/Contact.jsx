@@ -1,6 +1,9 @@
 import { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
+import toast, { Toaster } from 'react-hot-toast';
 import emailjs from '@emailjs/browser';
+
+import 'react-custom-alert/dist/index.css';
 
 import { styles } from '../styles';
 import { EarthCanvas } from './canvas';
@@ -9,12 +12,16 @@ import { slideIn } from '../utils/motion';
 
 const Contact = () => {
   const formRef = useRef();
+  
   const [form, setForm] = useState({
     name: '',
     email: '',
     message: '',
   })
   const [loading, setloading] = useState(false);
+
+  const alertInfo = () => toast.success('Thank you for your message. I will get back to you as soon as possible.');
+  const alertError = () => toast.error('Something went wrong! :(');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -25,6 +32,10 @@ const Contact = () => {
     e.preventDefault();
     setloading(true);
 
+    /**
+     * The parameters for this send function are:
+     * serviceid, templateid, email object, public key
+     */
     emailjs.send(
       'service_1m8dvsx', 
       'template_uf9r19u',
@@ -39,7 +50,7 @@ const Contact = () => {
       )
       .then(() => {
         setloading(false);
-        alert('Thank you for your message. I will get back to you as soon as possible.');
+        alertInfo();
         setForm({
           name: '',
           email: '',
@@ -48,7 +59,7 @@ const Contact = () => {
       }, (error) => {
         setloading(false);
         console.log(error);
-        alert('Something has gone wrong! :(')
+        alertError();
       })
   }
 

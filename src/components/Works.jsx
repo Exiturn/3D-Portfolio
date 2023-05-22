@@ -10,6 +10,7 @@ import { fadeIn, textVariant } from '../utils/motion';
 const ProjectCard = ({ index, name, description, tags, image, source_code_link, live_site_link }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+      {/* Tilt component used, speed, scale and maximum tilt angle */}
       <Tilt
         options={{
           max: 45,
@@ -54,6 +55,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
 const Works = () => {
   return (
     <>
+      {/* Projects object mapping to produce project cards with the information as props */}
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Projects</p>
         <h2 className={styles.sectionHeadText}>Personal Projects</h2>

@@ -1,4 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
+import toast, { Toaster } from 'react-hot-toast';
+import 'react-custom-alert/dist/index.css';
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from './components';
 
 
@@ -20,6 +22,7 @@ const App = () => {
           <StarsCanvas />
         </div>
       </div>
+      <Toaster />
     </BrowserRouter>
   )
 }
